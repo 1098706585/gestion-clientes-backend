@@ -1,0 +1,14 @@
+security.jwt.token.secret-key: my-secret-key
+---
+logging:
+  level:
+    org.springframework.web: INFO
+    org.springframework.security: DEBUG
+    com.example: DEBUG
+  file: negocios-colectivos-ws.log
+---
+# App Properties
+  veteran:
+    app:
+      jwtSecret: veteranSecretKey
+      jwtExpirationMs: 43200000
